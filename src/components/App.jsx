@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Notifications } from './Notifications/Notifications';
 import { Statistics } from './Statistics/Statistics';
+import css from './style.module.css';
 
 export class App extends Component {
   state = {
@@ -36,19 +37,19 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{'Please leave feedback'}</h1>
-        <ul>
-          <li>
-            <button
+      <div className={css.feedback}>
+        <h1 className={css.title}>{'Please leave feedback'}</h1>
+        <ul className={css.feedbackList}>
+          <li className={css.feedbackItem}>
+            <button className={css.feedbackButton}
               onClick={this.addFeedbackGood}>Good</button>
           </li>
-          <li>
-            <button
+          <li className={css.feedbackItem}>
+            <button className={css.feedbackButton}
               onClick={this.addFeedbackNeutral}>Neutral</button>
           </li>
-          <li>
-            <button
+          <li className={css.feedbackItem}>
+            <button className={css.feedbackButton}
               onClick={this.addFeedbackBad}>Bad</button>
           </li>
         </ul>

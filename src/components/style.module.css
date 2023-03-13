@@ -1,0 +1,39 @@
+.title{
+    font-size: 25px;
+    color:blue;
+
+}
+
+.feedback{
+    text-align:center;
+    width:40%;
+    margin:0 auto;
+}
+
+.feedbackList{
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    margin-bottom:30px;
+
+}
+
+.feedbackItem{
+    margin: 0 15px;
+
+}
+
+.feedbackButton{
+    width:70px;
+    color:white;
+    background-color: gray;
+    border: none;
+    border-radius:10px;
+
+}
+
+.feedbackButton:hover{
+    background-color:black;
+}
